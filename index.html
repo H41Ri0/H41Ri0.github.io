@@ -1,20 +1,161 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <title>どうしようもなく今を生きてる</title>
         <meta charset="UTF-8">
+        <title>不完全な未来へ</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/particle.css">
+        <link rel="stylesheet" type="text/css" href="./css/lightcase.css">
+         <!-- 使用ライブラリ 
+            https://vincentgarreau.com/particles.js/
+            https://github.com/cbopp-art/lightcase
+            https://jquery.com/
+         -->
+        <noscript>JavaScriptをオンにしてください。　正常に動作しない場合があります。</noscript>
+        <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script> -->
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                 $('a[data-rel^=lightcase]').lightcase();
+            });
+        </script>
     </head>
     <body>
-        <div class="twitter">
-            <a class="twitter-timeline" data-lang="en" data-width="300" data-height="600" data-theme="light" href="https://twitter.com/__qm_?ref_src=twsrc%5Etfw">
-                Tweets by __qm_
-            </a> 
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-            </script> 
-        </div>
-        <p>
-            ここは
-            普通に改行できる
-        </p>
+        <header>
+            <div id="particles-js"></div>
+            <div id="top_home">
+                <p>自分へ</p>
+                <a href="./index.html" id="top_logo">
+                    <img src="./images/top_logo.png">
+                </a>
+                <p>
+                    ここは<br>
+                    活動記録保存場所
+                </p>
+            </div>
+        </header>
+        <main>
+            <!-- <div id="particles-js_2"></div> -->
+            <section class="main_home_profile">
+                <div class="main_header">
+                    <h2 class="title">自己紹介</h2>
+                </div>
+                <div id="layout_2">
+                    <img id="profile" src="./images/prifileicon.png" alt="">
+                    <p id="description">
+                        1993年11月16日生まれ<br>
+                        趣味はゲーム、読書、音楽、好きなことをすること。<br>
+                        このサイトの製作期間4日<br>
+                        製作者のTwitter:<a href="javascript:void(0)" onclick="var ok=confirm('この先は個人情報が記載されていたりR15,R18要素を含みあなたの精神を汚染する場合があります。\nそれでも進みますか？');
+                        if (ok) location.href='https://twitter.com/__qm_/'; return false;" title="Twitter">@__qm_</a>
+                    </p>
+                </div>
+            </section>
+            <section class="main_home_portfolio">
+                <div class="main_header">
+                    <h2 class="title">制作物</h2>
+                </div>
+                <ul class="sort-btn">
+                    <li data-group="all" class="sort00 active">全て</li><!--はじめに「全て」ボタンに現在地表示をつけるためactive というクラス名を付与-->
+                    <li data-group="student" class="sort01">学生時代</li>
+                    <li data-group="individual" class="sort02">個人制作</li>
+                    <li data-group="ss" class="sort03">ゲームスクリーンショット加工</li>
+                    <li data-group="other" class="sort04">その他</li>
+                </ul>
+                <ul class="sortgrid">
+                    <li class="item" data-groups='["student","all"]'>
+                    <a href="./pic/stu/FIZZPUZZ_000024224.jpg" data-rel="lightcase:fizzpuzz" title="FizzPuzz<br>担当箇所：全体のデザイン(UI)、画面遷移プログラム、デザインプログラム、シークレットプログラム、一部テクスチャ作成"><img src="./pic/stu/FIZZPUZZ_000024224.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["student","all"]'>
+                    <a href="./pic/stu/FIZZPUZZ_000056723.jpg" data-rel="lightcase:fizzpuzz" title="FizzPuzz"><img src="./pic/stu/FIZZPUZZ_000056723.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["student","all"]'>
+                    <div id="special">
+                    <a href="https://youtu.be/HpGyh6anL1M" data-rel="lightcase:fizzpuzz" title="FizzPuzzのPV<br>Asia Degital Art Award Fukuoka 2014 エンターテイメント部門 受賞<br>Tokyo Game Show 2014 出典"><img src="./pic/stu/FizzPuzz.jpg" alt=""></a>
+                    </div>    
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="https://youtu.be/yYf3UUwDgAA" data-rel="lightcase:AfterEffects" title="Adobe AfterEffects<br>作成時間：1時間"><img src="./pic/indi/Audiospectrum.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="https://youtu.be/1EgT7eF3png" data-rel="lightcase:AfterEffects" title="Adobe AfterEffects<br>作成時間：1時間"><img src="./pic/indi/Audiospectrum_bubble.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="https://youtu.be/Rk_hB7D0NU4" data-rel="lightcase:AfterEffects" title="Adobe AfterEffects<br>作成時間：2時間"><img src="./pic/indi/LoopBGA.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/logo1.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo1.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/logo2.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo2.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/logo3.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo3.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/logo4.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo4.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/danmati_logo1.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/danmati_logo1.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/danmati_logo2.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/danmati_logo2.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/nier_logo1.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo1.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/nier_logo2.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo2.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/nier_logo3.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo3.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["individual","all"]'>
+                    <a href="./pic/pso2/nier_logo4.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo4.png" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["ss","all"]'>
+                    <a href="./pic/pso2/ss1.jpg" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/ss1.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["ss","all"]'>
+                    <a href="./pic/pso2/ss2.jpg" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/ss2.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["ss","all"]'>
+                    <a href="./pic/pso2/ss3.jpg" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/ss3_thumb.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["ss","all"]'>
+                    <a href="./pic/ff14/ffxiv_1.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_1.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["ss","all"]'>
+                    <a href="./pic/ff14/ffxiv_2.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_2_thumb.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["ss","all"]'>
+                    <a href="./pic/ff14/ffxiv_3.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_3_thumb.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["ss","all"]'>
+                    <a href="./pic/ff14/ffxiv_4.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_4.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["ss","all"]'>
+                    <a href="./pic/ff14/ffxiv_5.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_5.jpg" alt=""></a>
+                    </li>
+                    <li class="item" data-groups='["other","all"]'>
+                    <a href="./images/top_logo.png" data-rel="lightcase:site" title="このサイトのロゴ"><img src="./images/top_logo.png" alt=""></a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- フッター -->
+        <footer>
+            <div class="footer">
+                Copyright © hal-tech-lab All Rights Reserved. | 
+                The source code is available on
+                <a href="https://github.com/hal-tech-lab/hal-tech-lab.github.io/blob/main/index.html" title="Source code">GitHub</a>
+                .
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="./js/jquery.shuffle.min.js"></script>
+        <script src="./js/lightcase.js"></script>
+        <script src="./js/javascript.js"></script>
+        <script src="./js/particles.js"></script>
     </body>
 </html>
