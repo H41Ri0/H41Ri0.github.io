@@ -40,8 +40,32 @@ html,body,header,main,footer{
 	transform: translateY(0px);
 	opacity: 1;
 	}
-  }
-
+}
+/*ニュースティッカー*/
+div.newsticker {
+    margin: 15px 0px 3px 5px;
+}
+#ul_news {
+    display: none;
+}
+div.tick {
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    border: solid 1px silver;
+    position: relative;
+    overflow: hidden;
+	background: white;
+    border-radius: 3px;
+	margin: auto;
+}
+div.tick a {
+    position: absolute;
+    margin-left: 10px;
+    font-size: 1.0em;
+    color: gray;
+}
 /* トップ終わり */
 
 /* メイン */
@@ -128,6 +152,9 @@ main{
 
 .sortgrid{
 	margin-left: 10%;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
 	overflow: hidden;
 }
 
