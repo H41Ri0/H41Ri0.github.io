@@ -5,19 +5,19 @@
         <title>不完全な未来へ</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="./css/particle.css">
-        <link rel="stylesheet" type="text/css" href="./css/lightcase.css">
+        <link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/lity.min.css">
          <!-- 使用ライブラリ 
             https://vincentgarreau.com/particles.js/
-            https://github.com/cbopp-art/lightcase
+            https://lokeshdhakar.com/projects/lightbox2/
+            https://sorgalla.com/lity/
             https://jquery.com/
          -->
         <noscript>JavaScriptをオンにしてください。　正常に動作しない場合があります。</noscript>
         <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="./js/lity.min.js"></script>
+        <script type="text/javascript" src="./js/lightbox.min.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script> -->
-        <script type="text/javascript">
-            jQuery(document).ready(function ($) {
-                 $('a[data-rel^=lightcase]').lightcase();
-            });
         </script>
     </head>
     <body>
@@ -64,81 +64,81 @@
                 </ul>
                 <ul class="sortgrid">
                     <li class="item" data-groups='["student","all"]'>
-                    <a href="./pic/stu/FIZZPUZZ_000024224.jpg" data-rel="lightcase:fizzpuzz" title="FizzPuzz<br>担当箇所：全体のデザイン(UI)、画面遷移プログラム、デザインプログラム、シークレットプログラム、一部テクスチャ作成"><img src="./pic/stu/FIZZPUZZ_000024224.jpg" alt=""></a>
+                    <a href="./pic/stu/FIZZPUZZ_000024224.jpg" data-lightbox="fizzpuzz" data-title="FizzPuzz<br>担当箇所：全体のデザイン(UI)、画面遷移プログラム、デザインプログラム、シークレットプログラム、一部テクスチャ作成"><img src="./pic/stu/FIZZPUZZ_000024224.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["student","all"]'>
-                    <a href="./pic/stu/FIZZPUZZ_000056723.jpg" data-rel="lightcase:fizzpuzz" title="FizzPuzz"><img src="./pic/stu/FIZZPUZZ_000056723.jpg" alt=""></a>
+                    <a href="./pic/stu/FIZZPUZZ_000056723.jpg" data-lightbox="fizzpuzz" data-title="FizzPuzz"><img src="./pic/stu/FIZZPUZZ_000056723.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["student","all"]'>
                     <div id="special">
-                    <a href="https://youtu.be/HpGyh6anL1M" data-rel="lightcase:fizzpuzz" title="https://youtu.be/HpGyh6anL1M<br>FizzPuzzのPV<br>Asia Degital Art Award Fukuoka 2014 エンターテイメント部門 受賞<br>Tokyo Game Show 2014 出典"><img src="./pic/stu/FizzPuzz.jpg" alt=""></a>
+                    <a href="https://youtu.be/HpGyh6anL1M" title="FizzPuzzのPV:Asia Degital Art Award Fukuoka 2014 エンターテイメント部門 受賞:Tokyo Game Show 2014 出典" data-lity><img src="./pic/stu/FizzPuzz.jpg" alt=""></a>
                     </div>    
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="https://youtu.be/yYf3UUwDgAA" data-rel="lightcase:AfterEffects" title="Adobe AfterEffects<br>https://youtu.be/yYf3UUwDgAA<br>作成時間：1時間"><img src="./pic/indi/Audiospectrum.jpg" alt=""></a>
+                    <a href="https://youtu.be/yYf3UUwDgAA" title="Adobe AfterEffects:作成時間：1時間" data-lity><img src="./pic/indi/Audiospectrum.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="https://youtu.be/1EgT7eF3png" data-rel="lightcase:AfterEffects" title="Adobe AfterEffects<br>https://youtu.be/1EgT7eF3png<br>作成時間：1時間"><img src="./pic/indi/Audiospectrum_bubble.jpg" alt=""></a>
+                    <a href="https://youtu.be/1EgT7eF3png" title="Adobe AfterEffects:作成時間：1時間" data-lity><img src="./pic/indi/Audiospectrum_bubble.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="https://youtu.be/Rk_hB7D0NU4" data-rel="lightcase:AfterEffects" title="Adobe AfterEffects<br>https://youtu.be/Rk_hB7D0NU4<br>作成時間：2時間"><img src="./pic/indi/LoopBGA.jpg" alt=""></a>
+                    <a href="https://youtu.be/Rk_hB7D0NU4" title="Adobe AfterEffects:作成時間：2時間" data-lity><img src="./pic/indi/LoopBGA.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/logo1.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo1.png" alt=""></a>
+                    <a href="./pic/pso2/logo1.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo1.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/logo2.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo2.png" alt=""></a>
+                    <a href="./pic/pso2/logo2.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo2.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/logo3.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo3.png" alt=""></a>
+                    <a href="./pic/pso2/logo3.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo3.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/logo4.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo4.png" alt=""></a>
+                    <a href="./pic/pso2/logo4.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/logo4.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/danmati_logo1.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/danmati_logo1.png" alt=""></a>
+                    <a href="./pic/pso2/danmati_logo1.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/danmati_logo1.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/danmati_logo2.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/danmati_logo2.png" alt=""></a>
+                    <a href="./pic/pso2/danmati_logo2.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/danmati_logo2.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/nier_logo1.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo1.png" alt=""></a>
+                    <a href="./pic/pso2/nier_logo1.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo1.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/nier_logo2.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo2.png" alt=""></a>
+                    <a href="./pic/pso2/nier_logo2.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo2.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/nier_logo3.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo3.png" alt=""></a>
+                    <a href="./pic/pso2/nier_logo3.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo3.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["individual","all"]'>
-                    <a href="./pic/pso2/nier_logo4.png" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo4.png" alt=""></a>
+                    <a href="./pic/pso2/nier_logo4.png" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/nier_logo4.png" alt=""></a>
                     </li>
                     <li class="item" data-groups='["ss","all"]'>
-                    <a href="./pic/pso2/ss1.jpg" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/ss1.jpg" alt=""></a>
+                    <a href="./pic/pso2/ss1.jpg" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/ss1.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["ss","all"]'>
-                    <a href="./pic/pso2/ss2.jpg" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/ss2.jpg" alt=""></a>
+                    <a href="./pic/pso2/ss2.jpg" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/ss2.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["ss","all"]'>
-                    <a href="./pic/pso2/ss3.jpg" data-rel="lightcase:pso2" title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/ss3_thumb.jpg" alt=""></a>
+                    <a href="./pic/pso2/ss3.jpg" data-lightbox="pso2" data-title="©SEGA Phantasy Star Online 2"><img src="./pic/pso2/ss3_thumb.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["ss","all"]'>
-                    <a href="./pic/ff14/ffxiv_1.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_1.jpg" alt=""></a>
+                    <a href="./pic/ff14/ffxiv_1.jpg" data-lightbox="ffxiv" data-title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_1.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["ss","all"]'>
-                    <a href="./pic/ff14/ffxiv_2.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_2_thumb.jpg" alt=""></a>
+                    <a href="./pic/ff14/ffxiv_2.jpg" data-lightbox="ffxiv" data-title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_2_thumb.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["ss","all"]'>
-                    <a href="./pic/ff14/ffxiv_3.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_3_thumb.jpg" alt=""></a>
+                    <a href="./pic/ff14/ffxiv_3.jpg" data-lightbox="ffxiv" data-title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_3_thumb.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["ss","all"]'>
-                    <a href="./pic/ff14/ffxiv_4.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_4.jpg" alt=""></a>
+                    <a href="./pic/ff14/ffxiv_4.jpg" data-lightbox="ffxiv" data-title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_4.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["ss","all"]'>
-                    <a href="./pic/ff14/ffxiv_5.jpg" data-rel="lightcase:ffxiv" title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_5.jpg" alt=""></a>
+                    <a href="./pic/ff14/ffxiv_5.jpg" data-lightbox="ffxiv" data-title="©SQUARE ENIX FINAL FANTASY XIV"><img src="./pic/ff14/ffxiv_5.jpg" alt=""></a>
                     </li>
                     <li class="item" data-groups='["other","all"]'>
-                    <a href="./images/top_logo.png" data-rel="lightcase:site" title="このサイトのロゴ"><img src="./images/top_logo.png" alt=""></a>
+                    <a href="./images/top_logo.png" data-lightbox="site" data-title="このサイトのロゴ"><img src="./images/top_logo.png" alt=""></a>
                     </li>
                 </ul>
             </section>
@@ -154,7 +154,6 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="./js/jquery.shuffle.min.js"></script>
-        <script src="./js/lightcase.js"></script>
         <script src="./js/javascript.js"></script>
         <script src="./js/particles.js"></script>
     </body>
